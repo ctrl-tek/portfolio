@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 header {
-    padding: 15px 4%;
+    padding: 18px 4%;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #04384B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 header .logo h2 {
     font-family: 'comic relief', sans-serif;
     font-size: 1.8em;
     font-weight: 700;
     cursor: pointer;
+    color: whitesmoke;
 }
 header .links ul {
     display: flex;
@@ -20,19 +23,43 @@ header .links ul li {
     justify-content: space-between;
     align-items: center;
 }
-header li, a {
+header li, header a {
     text-decoration: none;
     list-style: none;
     color: black;
     font-size: 1.06em;
     font-family: 'comic relief', sans-serif;
     font-weight: 400;
+    color: whitesmoke;
+}
+header a {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0;
+}
+header a:hover {
+    color: antiquewhite;
 }
 header button {
-    padding: 8px 25px;
-    border-radius: 30px;
-    border-width: 0.5px;
+    padding: 12px 35px;
+    border-radius: 12px;
+    border-width: 0;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: 0;
+}
+header button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #03607E;
+    cursor: pointer;
+    color: antiquewhite;
+}
+header button:active {
+    transform: translateY(1px);
 }
 header button a {
-    font-size: 1.09em;
+    font-size: 1.3em;
 }
