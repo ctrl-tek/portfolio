@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+header {
+    padding: 15px 4%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo h2 {
+    font-family: 'comic relief', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+header .links ul {
+    display: flex;
+}
+header .links ul li {
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+header li, a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 1.06em;
+    font-family: 'comic relief', sans-serif;
+    font-weight: 400;
+}
+header button {
+    padding: 8px 25px;
+    border-radius: 30px;
+    border-width: 0.5px;
+}
+header button a {
+    font-size: 1.09em;
+}
